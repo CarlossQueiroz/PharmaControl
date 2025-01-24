@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /*Deixam as coisas lado a lado*/
+    justify-content: center;
+    /*Centraliza no eixo x*/
+    align-items: center;
+    /*Centraliza no eixo y*/
+}
+
+.left-login {
+    background:#05DB86;
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.left-login h1 {
+    font-size: 3vw;
+    text-transform: uppercase;
+}
+
+.left-login p {
+    font-size: 1.5vw;
+    margin-bottom: 30px;
+}
+
+.left-login span {
+    color: #000000;
+    font-weight: 800;
+}
+
+.left-login-image {
+    width: 50%;
+}
+
+.right-login {
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.form h1,
+h3 {
+    font-weight: 800;
+    margin: 0;
+}
+
+.form h1 span {
+    color: #05DB86;
+    text-transform: uppercase;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.textfield input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 12pt;
+    box-shadow: 0px 5px 8px #8f8f8f56;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield a{
+    font-size: 8pt;
+    margin-top: 8px;
+    left: 0;
+    visibility: hidden;
+}
+
+.error input{
+    border: 2px solid #ff3b25;
+}
+
+.error a{
+    color: #ff3b25;
+    visibility: visible;
+}
+
+.link{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 10pt;
+    margin: 5px 0px;
+}
+
+.link a {
+    color: #05DB86;
+}
+
+.buttonfield {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonfield button {
+    padding: 13px 0px;
+    margin: 5px;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+.btn-logIn {
+    width: 40%;
+    border: hidden;
+    color: #ffffff;
+    background: #36D98E;
+}
+
+.btn-signUp {
+    width: 60%;
+    color: #36D98E;
+    background: #ffffff;
+    border: 2px solid #36D98E;
+}
+
+.btn-logIn:hover,
+.btn-signUp:hover {
+    padding: 14px;
+}
+
+@media only screen and (max-width:950px) {
+    .left-login,
+    .right-login {
+        width: 50vw;
+    }
+
+    .form {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login{
+        display: none;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-img{
+        height: 50vw;
+        margin-bottom: 10px;
+    }
+
+    .form{
+        width: 90%;
+    }
+
+    .buttonfield{
+        flex-direction: column;
+    }
+
+    .buttonfield button{
+        width: 80%;
+    }
+}
